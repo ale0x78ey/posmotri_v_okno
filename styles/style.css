@@ -8,14 +8,38 @@ html {
   block-size: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.button {
+  border: 1px solid;
+  color: inherit;
+  background-color: transparent;
+  text-align: center;
+  font-family: "Fira Sans Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap;
+}
+
 .page {
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  padding: 133px 30px;
 }
 
 h1,
@@ -35,4 +59,67 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  /* TODO: rm */
+  background-color: blue;
+  inline-size: 711px;
+  block-size: 534px;
+}
+
+.result__video-container {
+  display: flex;
+  margin: 78px 0 16px;
+
+  /* TODO: rm */
+  /* background-color: grey; */
+}
+
+.result__video {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.search-form__fieldset-title {
+  font-family: "Fira Sans Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.search-form__submit-button {
+  padding: 6px 73.5px;
+  align-self: end;
+}
+
+.content__details {
+  /* TODO: rm background-color */
+  background-color: green;
+  inline-size: 399px;
 }
