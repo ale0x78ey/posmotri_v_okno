@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+.fuse_hidden*
+
+# Vim
+*.swp
+*.swn
+*.swo
+
+# JetBrains
+.idea/
+*.iml
+
+# JS
+node_modules/
+
+# Files
+*_
