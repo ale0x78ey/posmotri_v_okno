@@ -8,11 +8,15 @@ html {
   block-size: 100%;
 }
 
+:root {
+  --main-color: #fff;
+}
+
 .page {
   margin: auto;
   padding: 133px 30px;
   background-color: #1b1919;
-  color: #fff;
+  color: var(--main-color);
   font-size: 18px;
   font-family: 'Fira Sans Condensed', sans-serif;
   block-size: 100%;
@@ -64,49 +68,45 @@ ol {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  overflow: auto visible;
   block-size: 100%;
   inline-size: 100%;
-  overflow: auto visible;
-
-  /* TODO: rm */
-  background-color: blue;
 }
 
 .result {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding-top: 78px;
+  flex-grow: 1;
 
   /* TODO: rm flex-basis after nowrap searching and
      fixing result__video-container size. */
   flex-basis: 711px;
-  flex-grow: 1;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 78px;
 }
 
 .result__video-container {
-  display: inline-block;
-
   position: relative;
+  display: inline-block;
   padding-bottom: 54.28%;
   block-size: 0;
   inline-size: 100%;
 }
 
 .result__video {
-  object-fit: cover;
-  object-position: center;
-  inline-size: auto;
-  block-size: 100%;
-
   position: absolute;
   top: 0;
   left: 0;
+  object-fit: cover;
+  object-position: center;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .search-form {
   display: flex;
   flex-direction: row;
+  gap: 40px;
   justify-content: space-between;
 }
 
@@ -114,6 +114,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  border: none;
 }
 
 .search-form__fieldset-title {
@@ -122,6 +123,46 @@ ol {
   font-size: 18px;
   font-family: 'Fira Sans Condensed', sans-serif;
   line-height: normal;
+}
+
+.search-form__label {
+  white-space: nowrap;
+}
+
+/* TODO: fix for Firefox. */
+
+.search-form__label:has(.search-form__checkbox:focus-visible) {
+  outline: 1px solid;
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.search-form__textfield {
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  border: 1px solid;
+  background-color: transparent;
+  inline-size: 19px;
+  block-size: 19px;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox {
+  padding: 1px;
+  background-color: var(--main-color);
+  background-clip: content-box;
 }
 
 .search-form__submit-button {
