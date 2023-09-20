@@ -15,7 +15,6 @@ html {
   color: #fff;
   font-size: 18px;
   font-family: 'Fira Sans Condensed', sans-serif;
-  inline-size: 1200px;
   block-size: 100%;
 }
 
@@ -65,33 +64,44 @@ ol {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  block-size: 100%;
+  inline-size: 100%;
+  overflow: auto visible;
+
+  /* TODO: rm */
+  background-color: blue;
 }
 
 .result {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding-top: 78px;
 
-  /* TODO: rm */
-  background-color: blue;
-  inline-size: 711px;
-  block-size: 534px;
+  /* TODO: rm flex-basis after nowrap searching and
+     fixing result__video-container size. */
+  flex-basis: 711px;
+  flex-grow: 1;
 }
 
 .result__video-container {
-  display: flex;
-  margin: 78px 0 16px;
+  display: inline-block;
 
-  /* TODO: rm */
-
-  /* background-color: grey; */
+  position: relative;
+  padding-bottom: 54.28%;
+  block-size: 0;
+  inline-size: 100%;
 }
 
 .result__video {
   object-fit: cover;
   object-position: center;
-  inline-size: 100%;
+  inline-size: auto;
   block-size: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .search-form {
@@ -143,6 +153,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  overflow: hidden auto;
 }
 
 .content__card-link {
