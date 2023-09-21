@@ -58,10 +58,11 @@ ol {
   font-weight: 700;
   font-style: normal;
   font-size: 18px;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: inherit;
   line-height: normal;
   text-align: center;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .content {
@@ -115,14 +116,17 @@ ol {
   flex-direction: column;
   gap: 5px;
   border: none;
+  font-size: 18px;
+  font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .search-form__fieldset-title {
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: inherit;
+  font-family: inherit;
   line-height: normal;
+  margin-left: 1px;
 }
 
 .search-form__label {
@@ -133,6 +137,7 @@ ol {
 
 .search-form__label:has(.search-form__checkbox:focus-visible) {
   outline: 1px solid;
+  outline-offset: 1px;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -141,12 +146,46 @@ ol {
 }
 
 .search-form__textfield {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid none;
+  border-color: inherit;
+  cursor: pointer;
+  inline-size: 225px;
+  margin-left: 2px;
+  margin-bottom: 2px;
+}
+
+.search-form__textfield:focus {
+  outline: 1px solid;
+  outline-offset: 1px;
+}
+
+.search-form__textfield:active {
+  border: 1px solid;
+  outline: none;
 }
 
 .search-form__checkbox-list {
   display: flex;
   flex-direction: row;
   gap: 15px;
+}
+
+.search-form__checkbox {
+  cursor: pointer;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox {
+  padding: 1px;
+  background-color: var(--main-color);
+  background-clip: content-box;
 }
 
 .search-form__pseudo-checkbox {
@@ -157,12 +196,6 @@ ol {
   background-color: transparent;
   inline-size: 19px;
   block-size: 19px;
-}
-
-.search-form__checkbox:checked + .search-form__pseudo-checkbox {
-  padding: 1px;
-  background-color: var(--main-color);
-  background-clip: content-box;
 }
 
 .search-form__submit-button {
