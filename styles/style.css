@@ -245,6 +245,7 @@ ol {
   flex-direction: column;
   gap: 27px;
   min-inline-size: 399px;
+  padding: 2px 1px 0;
 }
 
 .title {
@@ -254,7 +255,6 @@ ol {
   font-family: Oswald, sans-serif;
   line-height: 94%;
   text-transform: uppercase;
-  margin-top: 2px;
 }
 
 .content__accent {
@@ -308,4 +308,10 @@ ol {
   padding: 2px 0;
   inline-size: 100%;
   block-size: 100%;
+}
+
+.more-button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  inline-size: 100%;
 }
