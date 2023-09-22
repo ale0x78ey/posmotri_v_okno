@@ -95,17 +95,12 @@ ol {
   gap: 30px;
   block-size: 100%;
   inline-size: 100%;
+  justify-content: center;
 }
 
 .result {
   display: flex;
-  flex-grow: 1;
-
-  /* TODO: rm flex-basis after nowrap searching and
-     fixing result__video-container size. */
-  flex-basis: 711px;
   flex-direction: column;
-  /* gap: 16px; */
   justify-content: space-between;
   padding-top: 78px;
 }
@@ -113,15 +108,11 @@ ol {
 .result__video-container {
   position: relative;
   display: inline-block;
-  padding-bottom: 54.28%;
-  block-size: 0;
-  inline-size: 100%;
+  inline-size: 711px;
+  block-size: 386px;
 }
 
 .result__video {
-  position: absolute;
-  top: 0;
-  left: 0;
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
@@ -245,7 +236,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 27px;
-  min-inline-size: 399px;
+  inline-size: 399px;
   block-size: 100%;
   padding: 2px 1px 0;
 }
@@ -314,7 +305,6 @@ ol {
 }
 
 .more-button {
-  align-self: end;
   padding-top: 6px;
   padding-bottom: 6px;
   inline-size: 100%;
