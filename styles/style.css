@@ -14,12 +14,13 @@ html {
 
 .page {
   margin: auto;
-  padding: 133px 29px;
+  padding: 133px 29px 131px;
   background-color: #1b1919;
   color: var(--main-color);
   font-size: 18px;
   font-family: 'Fira Sans Condensed', sans-serif;
   block-size: 100%;
+  overflow: auto;
 }
 
 h1,
@@ -92,7 +93,6 @@ ol {
   display: flex;
   flex-direction: row;
   gap: 30px;
-  overflow: auto visible;
   block-size: 100%;
   inline-size: 100%;
 }
