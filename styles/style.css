@@ -262,6 +262,7 @@ ol {
 }
 
 .content__list {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -311,6 +312,7 @@ ol {
 }
 
 .more-button {
+  align-self: end;
   padding-top: 6px;
   padding-bottom: 6px;
   inline-size: 100%;
