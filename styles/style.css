@@ -14,7 +14,7 @@ html {
 
 .page {
   margin: auto;
-  padding: 133px 30px;
+  padding: 133px 29px;
   background-color: #1b1919;
   color: var(--main-color);
   font-size: 18px;
@@ -40,6 +40,15 @@ ul,
 ol {
   list-style: none;
 }
+
+/* TODO: rm */
+/* body { */
+/*   background-image: url(../images/main-1.png); */
+/*   background-position: center; */
+/*   background-repeat: no-repeat; */
+/*   background-size: cover; */
+/*   opacity: 0.6; */
+/* } */
 
 .visually-hidden {
   position: absolute;
@@ -181,6 +190,7 @@ ol {
   inline-size: 225px;
   margin-left: 2px;
   margin-bottom: 2px;
+  padding-left: 1px;
 }
 
 .search-form__textfield:focus {
@@ -233,7 +243,7 @@ ol {
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 27px;
   min-inline-size: 399px;
 }
 
@@ -244,6 +254,7 @@ ol {
   font-family: Oswald, sans-serif;
   line-height: 94%;
   text-transform: uppercase;
+  margin-top: 2px;
 }
 
 .content__accent {
@@ -253,7 +264,7 @@ ol {
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 32px;
   overflow: hidden auto;
 }
 
@@ -271,7 +282,7 @@ ol {
 .content__video-card-description-container {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 5px;
 }
 
 .content__video-card-title {
