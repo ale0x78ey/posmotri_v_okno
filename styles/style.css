@@ -44,19 +44,15 @@ ol {
 
 /* TODO: rm */
 
-/* body { */
-
-/*   background-image: url(../images/main-1.png); */
-
-/*   background-position: center; */
-
-/*   background-repeat: no-repeat; */
-
-/*   background-size: cover; */
-
-/*   opacity: 0.6; */
-
-/* } */
+/*
+body {
+  background-image: url(../images/main-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+}
+*/
 
 .visually-hidden {
   position: absolute;
@@ -89,6 +85,10 @@ ol {
 .button:active {
   background-color: #545050;
   text-decoration: none;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .button:focus-visible {
@@ -155,11 +155,21 @@ ol {
   white-space: nowrap;
 }
 
-/* TODO: fix for Firefox. */
+.search-form__label:has(:focus) {
+  outline: none;
+}
 
-.search-form__label:has(.search-form__checkbox:focus-visible) {
+.search-form__label:has(:focus-visible) {
   outline: 1px solid;
   outline-offset: 1px;
+}
+
+@supports not selector(:has(:focus-visible)) {
+  /* Firefox 117.0 on macOS and maybe others */
+  .search-form__label:focus-within {
+    outline: 1px solid;
+    outline-offset: 1px;
+  }
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -184,7 +194,7 @@ ol {
   inline-size: 225px;
 }
 
-.search-form__textfield:focus {
+.search-form__textfield:focus-visible {
   outline: 1px solid;
   outline-offset: 1px;
 }
@@ -256,6 +266,7 @@ ol {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
   overflow: hidden auto;
   block-size: 100%;
@@ -312,8 +323,6 @@ ol {
 }
 
 .more-button {
-  margin: 0 2px 2px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  inline-size: 100%;
+  margin-bottom: 2px;
+  padding: 5px 143px;
 }
