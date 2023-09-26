@@ -261,7 +261,7 @@ ol {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 24px;
   align-items: center;
   overflow: auto;
   block-size: 303px;
