@@ -191,7 +191,7 @@ ol {
   font-family: inherit;
   cursor: pointer;
   appearance: none;
-  inline-size: 225px;
+  min-inline-size: 225px;
 }
 
 .search-form__textfield:focus-visible {
