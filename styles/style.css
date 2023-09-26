@@ -263,7 +263,7 @@ ol {
   flex-direction: column;
   gap: 30px;
   align-items: center;
-  overflow: hidden auto;
+  overflow: auto;
   block-size: 303px;
 }
 
