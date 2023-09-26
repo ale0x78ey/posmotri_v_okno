@@ -53,7 +53,7 @@ ol {
 }
 
 .button {
-  border: 1px solid;
+  border: 1px solid currentColor;
   background-color: transparent;
   color: inherit;
   font-weight: 700;
@@ -183,7 +183,7 @@ ol {
 .search-form__textfield {
   border-width: 1px;
   border-style: solid none;
-  border-color: inherit;
+  border-color: currentColor;
   background-color: transparent;
   color: inherit;
   font-size: inherit;
