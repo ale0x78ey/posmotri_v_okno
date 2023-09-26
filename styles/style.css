@@ -242,7 +242,6 @@ ol {
   gap: 21px;
   margin: 0 0 7px;
   inline-size: 399px;
-  block-size: 527px;
 }
 
 .title {
@@ -265,7 +264,7 @@ ol {
   gap: 30px;
   align-items: center;
   overflow: hidden auto;
-  block-size: 100%;
+  block-size: 303px;
 }
 
 .content__list:focus {
