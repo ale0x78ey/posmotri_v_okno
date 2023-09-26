@@ -300,7 +300,6 @@ ol {
 .content__video-card {
   display: grid;
   grid-template-columns: 200px 194px;
-  grid-auto-rows: 103px;
 }
 
 .content__video-card-description-container {
