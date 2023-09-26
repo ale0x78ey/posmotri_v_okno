@@ -316,7 +316,6 @@ ol {
   font-family: Oswald, sans-serif;
   line-height: 100%;
   text-transform: uppercase;
-  text-overflow: ellipsis;
 }
 
 .content__video-card-description {
@@ -325,7 +324,6 @@ ol {
   font-size: 17.55px;
   font-family: 'Fira Sans Condensed', sans-serif;
   line-height: 95%;
-  text-overflow: ellipsis;
 }
 
 .content__video-card-thumbnail {
