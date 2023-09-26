@@ -211,8 +211,7 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
   margin-right: 5px;
   border: 1px solid;
   background-color: transparent;
