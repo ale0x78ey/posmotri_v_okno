@@ -42,18 +42,6 @@ ol {
   list-style: none;
 }
 
-/* TODO: rm */
-
-/*
-body {
-  background-image: url(../images/main-1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.6;
-}
-*/
-
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -99,15 +87,15 @@ body {
 .content {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 28px;
   justify-content: center;
 }
 
 .result {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 70px 1px 2px;
+  gap: 16px;
+  padding: 70px 1px 0;
 }
 
 .result__video-container {
@@ -254,9 +242,10 @@ body {
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 21px;
   inline-size: 399px;
-  block-size: 534px;
+  block-size: 527px;
+  margin: 0 0 7px;
 }
 
 .title {
