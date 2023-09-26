@@ -150,6 +150,7 @@ ol {
   flex-direction: row;
   align-items: center;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .search-form__label:has(:focus) {
@@ -207,10 +208,6 @@ ol {
   display: flex;
   flex-direction: row;
   gap: 15px;
-}
-
-.search-form__checkbox {
-  cursor: pointer;
 }
 
 .search-form__pseudo-checkbox {
