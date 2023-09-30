@@ -210,7 +210,6 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  display: block;
   margin-right: 5px;
   border: 1px solid;
   background-color: transparent;
