@@ -329,7 +329,7 @@ ol {
 .content__video-card-thumbnail {
   object-fit: cover;
   object-position: center;
-  margin: 2px 0 2px 1px;
+  margin: 2px 0;
   inline-size: 194px;
   block-size: 103px;
 }
