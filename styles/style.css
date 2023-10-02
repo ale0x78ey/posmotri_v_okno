@@ -8,6 +8,16 @@ html {
   block-size: 100%;
 }
 
+/* TODO: rm */
+
+body {
+  background-image: url(../images/main-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+}
+
 :root {
   --main-color: #fff;
 }
@@ -87,8 +97,8 @@ ol {
 .content {
   display: flex;
   flex-direction: row;
-  gap: 26px;
-  justify-content: center;
+  inline-size: 1140px;
+  justify-content: space-between;
 }
 
 .result {
