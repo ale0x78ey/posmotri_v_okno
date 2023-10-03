@@ -15,8 +15,8 @@ html {
 .page {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: #1b1919;
   color: var(--main-color);
   font-size: 18px;
@@ -239,7 +239,12 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  /* It is necessary to fix the inline-size when nothing was found. */
   min-inline-size: 399px;
+
+  /* I can't use margin-top or padding-top, because it is necessary to center the image when the screen height is not 800px. If I don't use margin-bottom then the figma layout will be shifted relative to this layout.
+  */
   min-block-size: 548px;
 }
 
