@@ -247,7 +247,7 @@ ol {
      because it is necessary to center the image when the
      screen height is not 800px. If don't use margin-bottom
      or min-block-size then the figma layout will be shifted
-     relative to the browser's layout.*/
+     relative to the browser's layout. */
   min-block-size: 548px;
 }
 
