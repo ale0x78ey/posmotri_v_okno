@@ -243,10 +243,11 @@ ol {
   /* To fix the inline-size when nothing was found. */
   min-inline-size: 399px;
 
-  /* I can't use margin-top or padding-top, because it is necessary
-     to center the image when the screen height is not 800px.
-     If don't use margin-bottom then the figma layout will be
-     shifted relative to browser's layout. */
+  /* I can't use margin-top or padding-top for the .content,
+     because it is necessary to center the image when the
+     screen height is not 800px. If don't use margin-bottom
+     or min-block-size then the figma layout will be shifted
+     relative to the browser's layout.*/
   min-block-size: 548px;
 }
 
